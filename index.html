@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ragdoll Archers - FunFusion | Play Exciting Archery Game Online</title>
+    <meta name="description" content="Play Ragdoll Archers online at FunFusion - an exciting archery game where you can test your skills, compete with friends, and enjoy hours of fun gameplay.">
+    <link rel="canonical" href="https://funfusion.site">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* 苹果典型色系 */
+        .apple-blue { background-color: #007aff; }
+        .apple-green { background-color: #34c759; }
+        .apple-red { background-color: #ff3b30; }
+        .apple-yellow { background-color: #ffcc00; }
+        .apple-purple { background-color: #af52de; }
+        
+        /* 全高度布局 */
+        body { display: flex; flex-direction: column; min-height: 100vh; }
+        main { flex: 1; }
+        
+        /* 响应式调整 */
+        @media (max-width: 640px) {
+            .header-title {
+                font-size: 1.75rem;
+            }
+            .game-iframe {
+                height: 400px;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-900">
+    <header class="text-center py-8 apple-blue text-white">
+        <h1 class="text-4xl font-bold header-title">Ragdoll Archers</h1>
+        <p class="mt-2 text-lg">The ultimate archery gaming experience!</p>
+    </header>
+
+    <main class="max-w-4xl mx-auto p-4">
+        <section class="my-8">
+            <h2 class="text-2xl font-semibold apple-green text-white p-2 rounded">Game Overview</h2>
+            <p class="mt-4">
+                Ragdoll Archers is an exciting online archery game where players test their aim and strategy. Take control of your archer, draw your bow, and hit targets with precision. With realistic physics and ragdoll effects, every shot creates a unique and entertaining outcome.
+            </p>
+        </section>
+
+        <section class="my-8">
+            <h2 class="text-2xl font-semibold apple-red text-white p-2 rounded">How to Play</h2>
+            <ul class="list-disc list-inside mt-4">
+                <li>Use your mouse to aim your bow and arrow</li>
+                <li>Click and hold to draw your bow, release to shoot</li>
+                <li>Adjust your aim to account for gravity and distance</li>
+                <li>Hit targets to score points and advance through levels</li>
+                <li>Compete with friends to see who can achieve the highest score</li>
+            </ul>
+        </section>
+
+        <section class="my-8">
+            <h2 class="text-2xl font-semibold apple-yellow text-white p-2 rounded">Play Online</h2>
+            <div class="mt-4">
+                <iframe src="https://imgs.crazygames.com/ragdoll-archers_16x9/20240205020743/ragdoll-archers_16x9-cover?metadata=none&quality=70&width=946" 
+                        width="100%" height="800px" 
+                        class="border-0 game-iframe"
+                        title="Ragdoll Archers Game" 
+                        allow="autoplay; fullscreen"
+                        loading="lazy"
+                        sandbox="allow-scripts allow-same-origin allow-popups allow-forms">
+                </iframe>
+            </div>
+            <div class="text-center mt-4">
+                <button id="startGame" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                    Click to Start Game
+                </button>
+            </div>
+        </section>
+
+        <section class="my-8">
+            <h2 class="text-2xl font-semibold apple-purple text-white p-2 rounded">Features</h2>
+            <ul class="list-disc list-inside mt-4">
+                <li>Realistic physics-based archery gameplay</li>
+                <li>Entertaining ragdoll effects that make each shot unique</li>
+                <li>Multiple challenging levels with increasing difficulty</li>
+                <li>Compete against friends with the global leaderboard</li>
+                <li>Smooth controls optimized for both desktop and mobile play</li>
+                <li>Regular updates with new content and challenges</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="text-center py-6 apple-blue text-white">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="mb-4 md:mb-0">
+                    <h3 class="text-xl font-semibold">FunFusion</h3>
+                    <p>Your destination for quality online games</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold">Connect With Us</h3>
+                    <div class="flex justify-center md:justify-end space-x-4 mt-2">
+                        <a href="#" class="hover:text-gray-300">Twitter</a>
+                        <a href="#" class="hover:text-gray-300">Facebook</a>
+                        <a href="#" class="hover:text-gray-300">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-6 pt-6 border-t border-blue-400">
+                <p>&copy; 2023 FunFusion. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('startGame').addEventListener('click', function() {
+            const gameFrame = document.querySelector('iframe');
+            gameFrame.src = "https://games.crazygames.com/en_US/ragdoll-archers/index.html";
+            this.textContent = 'Game Loaded';
+            this.disabled = true;
+        });
+    </script>
+</body>
+</html>
